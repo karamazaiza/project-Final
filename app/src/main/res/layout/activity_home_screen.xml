@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <TextView
+        android:id="@+id/barHome"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="#365989"/>
+
+    <TextView
+        android:id="@+id/Home"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Home Screen"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/texthome"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/barHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Welcome Mohammed"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <!-- أزرار الهوم -->
+    <Button
+        android:id="@+id/Student"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Student Profile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/texthome"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/teacher"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Teacher Profile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/Student"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/grades"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Grades"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/teacher"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/exam"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Exams"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/grades"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Subject List"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/exam"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Notice"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/sub"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/homework"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="HomeWorks"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/notice"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <Button
+        android:id="@+id/Schedule"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Class schedule"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#00BCD4"
+        android:layout_below="@+id/homework"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+    <!-- FrameLayout لعرض الفراجمنت -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Schedule"
+        android:visibility="gone"/>
+</RelativeLayout>

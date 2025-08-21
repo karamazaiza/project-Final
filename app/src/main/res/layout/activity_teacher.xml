@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacher">
+    <TextView
+        android:id="@+id/teacher"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:background="#365989"/>
+    <TextView
+        android:id="@+id/teacherText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Teacher Profile"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Teacher"
+        android:layout_below="@+id/teacherText"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/Input1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:autofillHints="creditCardNumber"
+        android:text="Id Teacher"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:layout_below="@+id/text"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="TextViewEdits" />
+    <TextView
+        android:id="@+id/Input2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:autofillHints="name"
+        android:text="Name Teacher"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:layout_below="@+id/Input1"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="TextViewEdits" />
+    <TextView
+        android:id="@+id/Input3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:autofillHints="creditCardExpirationDate"
+        android:text="Age"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:layout_below="@+id/Input2"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="TextViewEdits" />
+    <TextView
+        android:id="@+id/Input4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:autofillHints="creditCardNumber"
+        android:text="Level"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:layout_below="@+id/Input3"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="TextViewEdits" />
+    <TextView
+        android:id="@+id/Input5"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:autofillHints="creditCardNumber"
+        android:text="Division"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:layout_below="@+id/Input4"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="TextViewEdits" />
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</RelativeLayout>
